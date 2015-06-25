@@ -1,5 +1,5 @@
 body, h1, h2, h3, h4, text {
-  font-family: 'Exo', sans-serif !important;
+  font-family: 'Exo', sans-serif;
   font-weight: 400;
 }
 
@@ -104,7 +104,7 @@ html, body {
 .table-responsive,
 .table tbody>tr>th,
 .table tbody>tr>td {
-  border: none !important;
+  border: none;
 }
 
 .bs-docs-sidebar .nav>li>a:hover,
@@ -112,8 +112,8 @@ html, body {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
-  color: #333 !important;
-  border-color: #333 !important;
+  color: #333;
+  border-color: #333;
 }
 
 @media screen and (max-width: 970px) {
