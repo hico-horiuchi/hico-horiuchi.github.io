@@ -1,0 +1,272 @@
+doctype html
+html
+  head
+    title Akihiko Horiuchi's Profile
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    link href="./assets/stylesheets/application.min.css" rel="stylesheet"
+    link href="./assets/images/neko.ico" rel="shortcut icon"
+
+  body#top
+    .background-img
+    header.max-height
+      .container
+        .row.header
+          .col-md-2
+          .col-md-4.center
+            img.img-circle.icon.shadow src="./assets/images/neko.png"
+            h1.bold Akihiko Horiuchi
+          .col-md-6.menu
+            a href="#about_me"
+              h4.bold
+                i.fa.fa-user.fa-fw
+                | &nbsp;About me
+            a href="#research"
+              h4.bold
+                i.fa.fa-keyboard-o.fa-fw
+                | &nbsp;Research
+            a href="#sns_and_blog"
+              h4.bold
+                i.fa.fa-globe.fa-fw
+                | &nbsp;SNS & Blog
+            a href="#environment"
+              h4.bold
+                i.fa.fa-desktop.fa-fw
+                | &nbsp;Environment
+            a href="#projects"
+              h4.bold
+                i.fa.fa-code.fa-fw
+                | &nbsp;Projects
+            a href="#club_activites"
+              h4.bold
+                i.fa.fa-child.fa-fw
+                | &nbsp;Club activites
+            a href="#designs"
+              h4.bold
+                i.fa.fa-picture-o.fa-fw
+                | &nbsp;Designs
+        a.black.center.scroll.scroll-down href="#main"
+          h1.bold
+            i.fa.fa-chevron-down
+            | &nbsp;Scroll
+
+    .main.shadow#main
+      .container
+        .row
+          .col-md-9
+            h2.bold#about_me
+              i.fa.fa-user
+              | &nbsp;About me
+            .table-responsive
+              table.table
+                tbody
+                  tr
+                    th style="width: 120px;" Name
+                    td style="width: 220px;" 堀内 晨彦
+                    td HORIUCHI, Akihiko
+                  tr
+                    th rowspan="2" University
+                    td 香川大学大学院 工学研究科
+                    td Graduate School of Engineering, Kagawa University
+                  tr
+                    td 信頼性情報システム工学科
+                    td Reliability-based Information Systems Engineering
+                  tr
+                    th Laboratory
+                    td
+                      | 最所研究室&nbsp;
+                      a.btn.btn-default.btn-xs href="https://air.eng.kagawa-u.ac.jp/" target="_blank"
+                        i.fa.fa-external-link
+                        | &nbsp;Web site
+                    td Saisho Laboratory
+                  tr
+                    th Year
+                    td 博士前期課程 2年
+                    td Second year graduate studnet
+            br
+
+            h2.bold#research
+              i.fa.fa-keyboard-o
+              | &nbsp;Research
+            .table-responsive
+              table.table
+                tbody
+                  tr
+                    th style="width: 120px;" キーワード
+                    td クラウド、オートスケール、ロードバランサ、負荷分散、負荷監視
+                  tr
+                    th Keywords
+                    td Cloud, Auto Scaling, Load Balancer, Load Distribution, Load Observation
+            br
+
+            h2.bold#sns_and_blog
+              i.fa.fa-globe
+              | &nbsp;SNS & Blog
+            a.btn.btn-info href="https://twitter.com/hico_horiuchi" target="_blank"
+              i.fa.fa-twitter
+              | &nbsp;Twitter
+            | &nbsp;
+            a.btn.btn-primary href="https://www.facebook.com/hico.horiuchi" target="_blank"
+              i.fa.fa-facebook
+              | &nbsp;Facebook
+            | &nbsp;
+            a.btn.btn-warning href="https://github.com/hico-horiuchi" target="_blank"
+              i.fa.fa-github-alt
+              | &nbsp;GitHub
+            | &nbsp;
+            a.btn.btn-success href="http://qiita.com/hiconyan" target="_blank"
+              i.fa.fa-pencil-square-o
+              | &nbsp;Qiita
+            | &nbsp;
+            a.btn.btn-default href="http://hico-horiuchi.hateblo.jp/" target="_blank"
+              i.fa.fa-pencil-square-o
+              | &nbsp;Blog
+            br
+            br
+
+            h2.bold#environment
+              i.fa.fa-desktop
+              | &nbsp;Environment
+            .table-responsive
+              table.table
+                tbody
+                  tr
+                    th style="width: 120px;" OS
+                    td OS X, Ubuntu Server
+                  tr
+                    th Shell
+                    td
+                      | Zsh&nbsp;
+                      a.btn.btn-default.btn-xs href="https://github.com/hico-horiuchi/initfiles" target="_blank"
+                        i.fa.fa-external-link
+                        | &nbsp;My settings
+                  tr
+                    th Editor
+                    td
+                      | Emacs&nbsp;
+                      a.btn.btn-default.btn-xs href="https://github.com/hico-horiuchi/dotemacs" target="_blank"
+                        i.fa.fa-external-link
+                        | &nbsp;My settings
+                  tr
+                    th Technology
+                    td Ruby, Ruby on Rails, Hubot, Sensu, Ansible, Golang
+                  tr
+                    th Design
+                    td Microsoft Expression Design 4
+            br
+
+            h2.bold#projects
+              i.fa.fa-code
+              | &nbsp;Projects
+            h3#projects_personal Personal
+            ul
+              li
+                a href="https://github.com/hico-horiuchi/chikurin" target="_blank" hico-horiuchi/chikurin
+                small.gray &nbsp;(竹林: Sensu status page by golang)
+              li
+                a href="https://github.com/hico-horiuchi/kangen" target="_blank" hico-horiuchi/kangen
+                small.gray &nbsp;(還元: URL shortening tool by golang)
+              li
+                a href="https://github.com/hico-horiuchi/ohgi" target="_blank" hico-horiuchi/ohgi
+                small.gray &nbsp;(扇: Sensu command-line tool by golang)
+              li
+                a href="https://github.com/hico-horiuchi/streak_ranking" target="_blank" hico-horiuchi/streak_ranking
+                small.gray &nbsp;(Ranking of streak of your GitHub followees)
+              li
+                a href="https://github.com/hico-horiuchi/hubo_labo" target="_blank" hico-horiuchi/hubo_labo
+                small.gray &nbsp;(Hubot community site)
+              li
+                a href="https://github.com/hico-horiuchi/huboco" target="_blank" hico-horiuchi/huboco
+                small.gray &nbsp;(あなたの研究生活をサポートするHubot)
+              li
+                a href="https://github.com/hico-horiuchi/snmp_monitor" target="_blank" hico-horiuchi/snmp_monitor
+                small.gray &nbsp;(SNMPをグラフ化するWebアプリケーション )
+              li
+                a href="https://github.com/hico-horiuchi/comic_release.rb" target="_blank" hico-horiuchi/comic_release.rb
+                small.gray &nbsp;(コミック新刊の発売日を調べるRubyスクリプト)
+            h3#projects_club_activites Team
+            ul
+              li
+                a href="https://github.com/sai-lab/mouryou" target="_blank" sai-lab/mouryou
+                small.gray &nbsp;(魍魎: Auto scaling tool by golang for web servers on Cloud)
+              li
+                a href="https://github.com/sai-lab/shoko" target="_blank" sai-lab/shoko
+                small.gray &nbsp;(書庫: Document (書) archive service for teams)
+              li
+                a href="https://github.com/emacs-jp/reading-init.el" target="_blank" emacs-jp/reading-init.el
+                small.gray &nbsp;(init.el読書会のページ)
+            br
+
+            h2.bold#club_activites
+              i.fa.fa-child
+              | &nbsp;Club activites
+            ul
+              li
+                | SLP (Student Laboratory of Programming)&nbsp;
+                a.btn.btn-default.btn-xs href="http://poulenc.eng.kagawa-u.ac.jp/Pub/Club/KBIT/" target="_blank"
+                  i.fa.fa-external-link
+                  | &nbsp;Web site
+                  td
+              li
+                | RISE写真部 (RISE Photo Club)&nbsp;
+                a.btn.btn-default.btn-xs href="https://www.facebook.com/RisePhotoClub" target="_blank"
+                  i.fa.fa-external-link
+                  | &nbsp;Web site
+            br
+
+            h2.bold#designs
+              i.fa.fa-picture-o
+              | &nbsp;Designs
+            ul
+              li
+                a href="./assets/images/media_design_study_group.png" target="_blank" 香川大学工学部 メディア・デザイン研究会 ポスター
+              li
+                a href="./assets/images/kagawa_univ_eng_fes_2014.png" target="_blank" 第11回 香川大学工学部祭 ポスター
+            br
+
+          .col-md-3
+            .bs-docs-sidebar.hidden-print.hidden-xs.hidden-sm role="complementary"
+              ul.nav.bs-docs-sidenav
+                li
+                  a href="#about_me"
+                    i.fa.fa-user.fa-fw
+                    | &nbsp;About me
+                li
+                  a href="#research"
+                    i.fa.fa-keyboard-o.fa-fw
+                    | &nbsp;Research
+                li
+                  a href="#sns_and_blog"
+                    i.fa.fa-globe.fa-fw
+                    | &nbsp;SNS & Blog
+                li
+                  a href="#environment"
+                    i.fa.fa-desktop.fa-fw
+                    | &nbsp;Environment
+                li
+                  a href="#projects"
+                    i.fa.fa-code.fa-fw
+                    | &nbsp;Projects
+                  ul.nav
+                    li
+                      a href="#projects_personal" Personal
+                    li
+                      a href="#projects_club_activites" Club activites
+                li
+                  a href="#club_activites"
+                    i.fa.fa-child.fa-fw
+                    | &nbsp;Club activites
+                li
+                  a href="#designs"
+                    i.fa.fa-picture-o.fa-fw
+                    | &nbsp;Designs
+
+      a.black.center.scroll href="#top"
+        h1.bold
+          i.fa.fa-chevron-up
+          | &nbsp;Top
+
+    footer.footer
+      p.bold &copy; 2015 Akihiko Horiuchi, All Rights Reserved.
+
+    script src="./assets/javascripts/jquery.min.js" type="text/javascript"
+    script src="./assets/javascripts/application.min.js" type="text/javascript"

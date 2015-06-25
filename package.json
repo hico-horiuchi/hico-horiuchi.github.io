@@ -1,0 +1,27 @@
+{
+  "name": "gulp",
+  "version": "3.9.0",
+  "author": "hico-horiuchi",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hico-horiuchi/hico-horiuchi.github.io.git"
+  },
+  "dependencies": {
+    "gulp": ">= 3.9.x",
+    "gulp-load-plugins": ">= 0.10.x",
+    "gulp-webserver": ">= 0.9.x",
+    "gulp-concat": ">= 2.6.x",
+    "gulp-slim": ">= 0.1.x",
+    "gulp-minify-css": ">= 1.2.x",
+    "gulp-uglify": ">= 1.2.x"
+  },
+  "devDependencies": {
+    "coffee-script": ">= 1.9.x"
+  },
+  "engines": {
+    "node": ">= 0.10.x",
+    "npm": ">= 2.11.x"
+  }
+}

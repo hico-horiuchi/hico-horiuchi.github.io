@@ -1,0 +1,147 @@
+body, h1, h2, h3, h4, text {
+  font-family: 'Exo', sans-serif !important;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+html, body {
+  height: 100%;
+}
+
+.background-img {
+  z-index: -1;
+  background-image: url('../images/graphy.png');
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.max-height {
+  min-height: 100%;
+}
+
+.header {
+  margin: 100px 0 50px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.icon {
+  height: 250px;
+}
+
+.black {
+  color: #333;
+}
+
+.black:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+.gray {
+  color: #999;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  background-color: #333;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 1px 0 0 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #999;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.scroll {
+  display: block;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.scroll-down:hover {
+  padding-top: 20px;
+}
+
+.shadow {
+  box-shadow: 0 0 30px #808080;
+  -moz-box-shadow: 0 0 30px #808080;
+  -webkit-box-shadow: 0 0 30px #808080;
+}
+
+.main {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.table-responsive,
+.table tbody>tr>th,
+.table tbody>tr>td {
+  border: none;
+}
+
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus,
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+  color: #333;
+  border-color: #333;
+}
+
+@media screen and (max-width: 970px) {
+  .max-height {
+    padding-bottom: 50px;
+  }
+
+  .header {
+    margin: 50px 0;
+  }
+
+  .menu {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .menu a {
+    margin: 0 auto 15px auto !important;
+    padding: 1px 0 0 0 !important;
+  }
+
+  .menu a:hover {
+    width: 300px;
+    margin: 0 auto 15px auto !important;
+  }
+
+  .scroll-down:hover,
+  .scroll-up:hover {
+    padding: 0 !important;
+  }
+}
