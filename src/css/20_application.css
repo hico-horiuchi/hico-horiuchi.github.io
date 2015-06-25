@@ -28,7 +28,7 @@ html {
   margin-right: 0;
 }
 .card .card-action a:hover {
-  color: rgb(132, 179,  87);
+  color: rgb(132, 179, 87);
 }
 
 .btn-floating + .btn-floating { margin-left: 10px; }
@@ -44,10 +44,10 @@ img.round-icon {
 hr {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,1), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,1), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,1), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,1), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,.5), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,.5), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,.5), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(58,107,72,.5), rgba(0,0,0,0));
 }
 
 @media screen and (max-width: 992px) {
@@ -58,5 +58,6 @@ hr {
   img.round-icon {
     height: 150px;
     border-radius: 75px;
+    margin-top: 1.78rem;
   }
 }
