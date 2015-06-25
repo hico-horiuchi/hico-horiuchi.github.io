@@ -104,7 +104,7 @@ html, body {
 .table-responsive,
 .table tbody>tr>th,
 .table tbody>tr>td {
-  border: none;
+  border: none !important;
 }
 
 .bs-docs-sidebar .nav>li>a:hover,
@@ -112,8 +112,8 @@ html, body {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
-  color: #333;
-  border-color: #333;
+  color: #333 !important;
+  border-color: #333 !important;
 }
 
 @media screen and (max-width: 970px) {
