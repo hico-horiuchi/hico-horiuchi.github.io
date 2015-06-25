@@ -131,17 +131,16 @@ html, body {
   }
 
   .menu a {
-    margin: 0 auto 15px auto !important;
-    padding: 1px 0 0 0 !important;
+    margin: 0 auto 15px auto;
+    padding: 1px 0 0 0;
   }
 
   .menu a:hover {
     width: 300px;
-    margin: 0 auto 15px auto !important;
+    margin: 0 auto 15px auto;
   }
 
-  .scroll-down:hover,
-  .scroll-up:hover {
-    padding: 0 !important;
+  .scroll-down:hover {
+    padding: 0;
   }
 }
