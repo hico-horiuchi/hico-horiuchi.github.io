@@ -3,11 +3,11 @@ h4 .fa { margin-right: 10px; }
 .row { margin-bottom: 0; }
 
 html {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
-.bold { font-weight: 800; }
-.th   { font-weight: 800; }
+.bold { font-weight: 700; }
+.th   { font-weight: 700; }
 
 .left-large-center-med  { text-align: left;  }
 .right-large-center-med { text-align: right; }

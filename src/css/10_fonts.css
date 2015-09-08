@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: local('Exo Regular'), local('Exo-Regular'), url('../fonts/exo-regular.ttf') format('truetype');
+  src: local('Ubuntu'), url('../fonts/ubuntu-regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 800;
-  src: local('Exo ExtraBold'), local('Exo-ExtraBold'), url('../fonts/exo-extrabold.ttf') format('truetype');
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../fonts/ubuntu-bold.ttf') format('truetype');
 }
