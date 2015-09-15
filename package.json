@@ -1,6 +1,6 @@
 {
-  "name": "gulp",
-  "version": "3.9.0",
+  "name": "hico-horiuchi.github.io",
+  "version": "0.0.1",
   "author": "hico-horiuchi",
   "license": "MIT",
   "private": true,
@@ -9,19 +9,21 @@
     "url": "https://github.com/hico-horiuchi/hico-horiuchi.github.io.git"
   },
   "dependencies": {
-    "gulp": ">= 3.9.x",
-    "gulp-load-plugins": ">= 0.10.x",
-    "gulp-webserver": ">= 0.9.x",
-    "gulp-concat": ">= 2.6.x",
-    "gulp-slim": ">= 0.3.x",
-    "gulp-minify-css": ">= 1.2.x",
-    "gulp-uglify": ">= 1.4.x"
+    "bower": ">= 1.5.x"
   },
   "devDependencies": {
-    "coffee-script": ">= 1.9.x"
+    "coffee-script": ">= 1.9.x",
+    "gulp": ">= 3.9.x",
+    "gulp-concat": ">= 2.6.x",
+    "gulp-load-plugins": ">= 0.10.x",
+    "gulp-minify-css": ">= 1.2.x",
+    "gulp-sass": ">= 2.0.x",
+    "gulp-slim": ">= 0.3.x",
+    "gulp-webserver": ">= 0.9.x",
+    "main-bower-files": ">= 2.9.x"
   },
   "engines": {
-    "node": ">= 0.10.x",
+    "node": ">= 0.12.x",
     "npm": ">= 2.14.x"
   }
 }

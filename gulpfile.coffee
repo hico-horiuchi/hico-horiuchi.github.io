@@ -1,4 +1,5 @@
 gulp = require('gulp')
+mainBowerFiles = require('main-bower-files')
 $ = require('gulp-load-plugins')()
 
 app = '.'
@@ -7,17 +8,11 @@ config =
   input:
     slim: src + '/slim/*.slim'
     css: src + '/css/*.css'
-    js: src + '/js/*.js'
+    fonts: app + '/bower_components/fontawesome/fonts/fontawesome-webfont.*'
   output:
     slim: app + '/'
     css: app + '/assets/stylesheets/'
-    js: app + '/assets/javascripts/'
-
-gulp.task 'webserver', ->
-  gulp.src(app)
-    .pipe($.webserver({
-      host: '0.0.0.0'
-    }))
+    fonts: app + '/assets/fonts/'
 
 gulp.task 'slim', ->
   gulp.src(config.input.slim)
@@ -27,26 +22,36 @@ gulp.task 'slim', ->
 gulp.task 'css', ->
   gulp.src(config.input.css)
     .pipe($.concat('application.min.css'))
-    .pipe($.minifyCss({
-      keepSpecialComments: 0
-    }))
+    .pipe($.minifyCss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest(config.output.css))
 
-gulp.task 'js', ->
-  gulp.src(config.input.js)
-    .pipe($.concat('application.min.js'))
-    .pipe($.uglify())
-    .pipe(gulp.dest(config.output.js))
+gulp.task 'bower_css', ->
+  gulp.src(mainBowerFiles({ filter: '**/*.scss' }))
+    .pipe($.sass())
+    .pipe($.concat('bower_components.min.css'))
+    .pipe($.minifyCss({ keepSpecialComments: 0 }))
+    .pipe(gulp.dest(config.output.css))
+
+gulp.task 'bower_fonts', ->
+  gulp.src(config.input.fonts)
+    .pipe(gulp.dest(config.output.fonts))
 
 gulp.task 'watch', ->
   gulp.watch(config.input.slim, ['slim'])
   gulp.watch(config.input.css, ['css'])
-  gulp.watch(config.input.js, ['js'])
+
+gulp.task 'webserver', ->
+  gulp.src(app)
+    .pipe($.webserver({ host: '0.0.0.0' }))
 
 gulp.task 'default', [
-  'webserver',
   'slim',
   'css',
-  'js',
+  'bower_css',
+  'bower_fonts'
+]
+
+gulp.task 'development', [
+  'webserver',
   'watch'
 ]
