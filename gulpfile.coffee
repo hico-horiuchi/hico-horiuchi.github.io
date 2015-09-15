@@ -25,7 +25,7 @@ gulp.task 'css', ->
     .pipe($.minifyCss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest(config.output.css))
 
-gulp.task 'bower_css', ->
+gulp.task 'bower_scss', ->
   gulp.src(mainBowerFiles({ filter: '**/*.scss' }))
     .pipe($.sass())
     .pipe($.concat('bower_components.min.css'))
@@ -47,7 +47,7 @@ gulp.task 'webserver', ->
 gulp.task 'default', [
   'slim',
   'css',
-  'bower_css',
+  'bower_scss',
   'bower_fonts'
 ]
 
