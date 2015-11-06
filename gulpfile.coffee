@@ -7,38 +7,55 @@ src = app + '/src'
 config =
   input:
     slim: src + '/slim/*.slim'
-    css: src + '/css/*.css'
-    fonts: app + '/bower_components/fontawesome/fonts/fontawesome-webfont.*'
+    scss: src + '/scss/*.scss'
+    coffee: src + '/coffee/*.coffee'
+    font: app + '/bower_components/fontawesome/fonts/fontawesome-webfont.*'
   output:
-    slim: app + '/'
+    html: app + '/'
     css: app + '/assets/stylesheets/'
-    fonts: app + '/assets/fonts/'
+    js: app + '/assets/javascripts/'
+    font: app + '/assets/fonts/'
 
 gulp.task 'slim', ->
   gulp.src(config.input.slim)
     .pipe($.slim())
-    .pipe(gulp.dest(config.output.slim))
+    .pipe(gulp.dest(config.output.html))
 
-gulp.task 'css', ->
-  gulp.src(config.input.css)
+gulp.task 'scss', ->
+  gulp.src(config.input.scss)
+    .pipe($.sass())
     .pipe($.concat('application.min.css'))
     .pipe($.minifyCss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest(config.output.css))
 
+gulp.task 'coffee', ->
+  gulp.src(config.input.coffee)
+    .pipe($.coffee({ bare: true }))
+    .pipe($.concat('application.min.js'))
+    .pipe($.uglify())
+    .pipe(gulp.dest(config.output.js))
+
 gulp.task 'bower_scss', ->
-  gulp.src(mainBowerFiles({ filter: '**/*.scss' }))
+  gulp.src([mainBowerFiles({ filter: '**/*.scss' })..., mainBowerFiles({ filter: '**/animate.css' })...])
     .pipe($.sass())
     .pipe($.concat('bower_components.min.css'))
     .pipe($.minifyCss({ keepSpecialComments: 0 }))
     .pipe(gulp.dest(config.output.css))
 
-gulp.task 'bower_fonts', ->
-  gulp.src(config.input.fonts)
-    .pipe(gulp.dest(config.output.fonts))
+gulp.task 'bower_js', ->
+  gulp.src(mainBowerFiles({ filter: '**/mithril.min.js' }))
+    .pipe($.concat('bower_components.min.js'))
+    .pipe($.uglify())
+    .pipe(gulp.dest(config.output.js))
+
+gulp.task 'bower_font', ->
+  gulp.src(config.input.font)
+    .pipe(gulp.dest(config.output.font))
 
 gulp.task 'watch', ->
   gulp.watch(config.input.slim, ['slim'])
-  gulp.watch(config.input.css, ['css'])
+  gulp.watch(config.input.scss, ['scss'])
+  gulp.watch(config.input.coffee, ['coffee'])
 
 gulp.task 'webserver', ->
   gulp.src(app)
@@ -46,9 +63,11 @@ gulp.task 'webserver', ->
 
 gulp.task 'default', [
   'slim',
-  'css',
+  'scss',
+  'coffee',
   'bower_scss',
-  'bower_fonts'
+  'bower_js',
+  'bower_font'
 ]
 
 gulp.task 'development', [

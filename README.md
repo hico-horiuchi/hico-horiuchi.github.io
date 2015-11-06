@@ -2,8 +2,10 @@
 
 #### Requirements
 
-  - [Materialize](http://materializecss.com) : 0.97.x
+  - [Mithril.js](https://lhorie.github.io/mithril/) : 0.2.0
+  - [Bootstrap](http://v4-alpha.getbootstrap.com/) : 4.0.0-alpha
   - [Font Awesome](http://fontawesome.io/) : 4.4.0
+  - [Animate.css](http://daneden.github.io/animate.css/) : 3.4.0
   - [Ubuntu Font Family](http://font.ubuntu.com)
 
 #### Contributing

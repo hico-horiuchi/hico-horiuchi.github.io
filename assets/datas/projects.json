@@ -1,0 +1,65 @@
+[{
+  "repository": "sai-lab/mouryou-web",
+  "description": "Web dashboard for mouryu by Golang & Mithril.js",
+  "organization": true
+}, {
+  "repository": "hico-horiuchi/yosage",
+  "description": "良さげ: Stand-alone LGTM gif generator by Golang",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/kakuzuke",
+  "description": "格付: GitHub current streak runking of your followees by Golang & Mithril.js",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/kaonashi",
+  "description": "工学部祭実行委員会をサポートするHubot",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/chikurin",
+  "description": "竹林: Sensu status page by Golang",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/kangen",
+  "description": "還元: URL shortening tool by Golang",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/sensu-plugins-go",
+  "description": "Sensu plugins & libraries by Golang",
+  "organization": false
+}, {
+  "repository": "sai-lab/mouryou",
+  "description": "魍魎: Auto scaling tool by Golang for web servers on Cloud",
+  "organization": true
+}, {
+  "repository": "sai-lab/shoko",
+  "description": "書庫: Document (書) archive service for teams",
+  "organization": true
+}, {
+  "repository": "hico-horiuchi/ohgi",
+  "description": "扇: Sensu command-line tool by Golang",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/streak_ranking",
+  "description": "Ranking of streak of your GitHub followees",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/hubo_labo",
+  "description": "Hubot community site",
+  "organization": false
+}, {
+  "repository": "emacs-jp/reading-init.el",
+  "description": "init.el読書会のページ",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/huboco",
+  "description": "あなたの研究生活をサポートするHubot",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/snmp_monitor",
+  "description": "SNMPをグラフ化するWebアプリケーション",
+  "organization": false
+}, {
+  "repository": "hico-horiuchi/comic_release.rb",
+  "description": "コミック新刊の発売日を調べるRubyスクリプト",
+  "organization": false
+}]

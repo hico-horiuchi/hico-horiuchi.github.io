@@ -11,3 +11,12 @@
   font-weight: 700;
   src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../fonts/ubuntu-bold.ttf') format('truetype');
 }
+
+body {
+  font-family: Ubuntu;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}

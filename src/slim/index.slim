@@ -1,248 +1,131 @@
 doctype html
-html
+html lang="ja"
   head
     title Akihiko Horiuchi
+
+    meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
+
     link href="./assets/stylesheets/bower_components.min.css" rel="stylesheet"
     link href="./assets/stylesheets/application.min.css" rel="stylesheet"
-    link href="./assets/images/neko.ico" rel="shortcut icon"
+    link href="./assets/images/favicon.ico" rel="shortcut icon"
 
   body
-    .container
-      .row
-        .col.s12.m12.l8.offset-l2
-          .card.z-depth-2
-            .card-content.sensu-darken.white-text
-              .row
-                .col.s12.m12.l3.right-large-center-med
-                  img.round-icon.z-depth-2 src="./assets/images/neko.png"
-                .col.s12.m12.l9.left-large-center-med
-                  h2.bold Akihiko Horiuchi
+    nav.navbar.navbar-fixed-top.bg-white
+      .container.text-center
+        .navbar-brand.text-sensu
+          span.bold Akihiko
+          i.fa.fa-leaf.m-x-sm
+          span.bold Horiuchi
 
-            .card-action.sensu-lighten.sensu-darken-text
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-user
-                    | About me
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-graduation-cap
-                      | Graduate School of Engineering, Kagawa University
-                    li
-                      i.fa.fa-li
-                      | Reliability-based Information Systems Engineering
-                    li
-                      i.fa.fa-li
-                      | Second year graduate studnet
-                    li
-                      i.fa.fa-li.fa-flask
-                      a href="https://air.eng.kagawa-u.ac.jp/" target="_blank"
-                        | Saisho Laboratory&nbsp;
-                        i.fa.fa-external-link
+    .container.m-t-md
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-user.m-r-sm
+            span.bold About me
+          .cart-text
+           ul.fa-ul.m-b-0
+              li
+                i.fa.fa-li.fa-graduation-cap
+                | Graduate School of Engineering, Kagawa University
+              li
+                i.fa.fa-li
+                | Reliability-based Information Systems Engineering
+              li
+                i.fa.fa-li
+                | Second year graduate studnet
+              li
+                i.fa.fa-li.fa-flask
+                a.link-white href="https://air.eng.kagawa-u.ac.jp/" target="_blank"
+                  | Saisho Laboratory
+                  i.fa.fa-external-link.m-l-sm
 
-              hr
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-globe.m-r-sm
+            span.bold SNS &amp; Blog
+          .cart-text
+            a.btn.text-sensu.bg-white.m-r-sm href="https://twitter.com/hico_horiuchi" target="_blank"
+              i.fa.fa-lg.fa-twitter.m-r-sm
+              | Twitter
+            a.btn.text-sensu.bg-white.m-r-sm href="https://www.facebook.com/hico.horiuchi" target="_blank"
+              i.fa.fa-lg.fa-facebook.m-r-sm
+              | Facebook
+            a.btn.text-sensu.bg-white.m-r-sm href="https://github.com/hico-horiuchi" target="_blank"
+              i.fa.fa-lg.fa-github-alt.m-r-sm
+              | GitHub
+            a.btn.text-sensu.bg-white.m-r-sm href="http://qiita.com/hiconyan" target="_blank"
+              i.fa.fa-lg.fa-search.m-r-sm
+              | Qiita
+            a.btn.text-sensu.bg-white.m-r-sm href="http://hico-horiuchi.hateblo.jp/" target="_blank"
+              i.fa.fa-lg.fa-pencil.m-r-sm
+              | Blog
 
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-globe
-                    | SNS &amp; Blog
-                  .btn-floating-group
-                    a.btn-floating.light-blue.white-text href="https://twitter.com/hico_horiuchi" target="_blank"
-                      i.fa.fa-twitter
-                    a.btn-floating.blue.darken-4.white-text href="https://www.facebook.com/hico.horiuchi" target="_blank"
-                      i.fa.fa-facebook
-                    a.btn-floating.grey.darken-4.white-text href="https://github.com/hico-horiuchi" target="_blank"
-                      i.fa.fa-github-alt
-                    a.btn-floating.light-green.white-text href="http://qiita.com/hiconyan" target="_blank"
-                      i.fa.fa-search
-                    a.btn-floating.grey.white-text href="http://hico-horiuchi.hateblo.jp/" target="_blank"
-                      i.fa.fa-pencil
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-keyboard-o.m-r-sm
+            span.bold Research
+          .cart-text
+            ul.fa-ul.m-b-0
+              li
+                i.fa.fa-li.fa-tags
+                | Cloud, Auto Scaling, Load Balancer, Load Distribution, Load Observation
 
-              hr
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-desktop.m-r-sm
+            span.bold Environment
+          .cart-text
+            ul.fa-ul.m-b-0
+              li
+                i.fa.fa-li.fa-server
+                | Ubuntu Server
+              li
+                i.fa.fa-li.fa-terminal
+                a.link-white href="https://github.com/hico-horiuchi/initfiles" target="_blank"
+                  | Zsh
+                  i.fa.fa-external-link.m-l-sm
+              li
+                i.fa.fa-li.fa-keyboard-o
+                a.link-white href="https://github.com/hico-horiuchi/dotemacs" target="_blank"
+                  | Emacs
+                  i.fa.fa-external-link.m-l-sm
+              li
+                i.fa.fa-li.fa-code
+                | Ruby, Ruby on Rails, Hubot, Sensu, Ansible, Golang
+              li
+                i.fa.fa-li.fa-paint-brush
+                | Microsoft Expression Design 4
 
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-keyboard-o
-                    | Research
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-tags
-                      | Cloud, Auto Scaling, Load Balancer, Load Distribution, Load Observation
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-code-fork.m-r-sm
+            span.bold Project
+          .card-content#project-app
 
-              hr
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-child.m-r-sm
+            span.bold Club
+          .card-content#club-app
 
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-desktop
-                    | Environment
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-server
-                      | Ubuntu Server
-                    li
-                      i.fa.fa-li.fa-terminal
-                      a href="https://github.com/hico-horiuchi/initfiles" target="_blank"
-                        | Zsh&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-keyboard-o
-                      a href="https://github.com/hico-horiuchi/dotemacs" target="_blank"
-                        | Emacs&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-code
-                      | Ruby, Ruby on Rails, Hubot, Sensu, Ansible, Golang
-                    li
-                      i.fa.fa-li.fa-paint-brush
-                      | Microsoft Expression Design 4
+      .card.bg-sensu.border-sensu.m-b-md.animated.fadeInRight
+        .card-block.text-white.p-a-md
+          h4.card-title.m-b-md
+            i.fa.fa-paint-brush.m-r-sm
+            span.bold Design
+          .card-content#design-app
 
-              hr
+    footer.small.m-b-md.text-muted
+      .container.text-center
+        i.fa.fa-copyright.m-r-sm
+        a.link-muted href="http://hico-horiuchi.github.io/" target="_blank" Akihiko Horiuchi
 
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-github-alt
-                    | Projects
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/yosage" target="_blank"
-                        | hico-horiuchi/yosage
-                      small.sensu-text &nbsp;(良さげ: Stand-alone LGTM gif generator by Golang)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/kakuzuke" target="_blank"
-                        | hico-horiuchi/kakuzuke
-                      small.sensu-text &nbsp;(格付: GitHub current streak runking of your followees by Golang & Mithril.js)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/kaonashi" target="_blank"
-                        | hico-horiuchi/kaonashi
-                      small.sensu-text &nbsp;(工学部祭実行委員会をサポートするHubot)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/chikurin" target="_blank"
-                        | hico-horiuchi/chikurin
-                      small.sensu-text &nbsp;(竹林: Sensu status page by Golang)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/kangen" target="_blank"
-                        | hico-horiuchi/kangen
-                      small.sensu-text &nbsp;(還元: URL shortening tool by Golang)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/sensu-plugins-go" target="_blank"
-                        | hico-horiuchi/sensu-plugins-go
-                      small.sensu-text &nbsp;(Sensu plugins & libraries by Golang)
-                    li
-                      i.fa.fa-li.fa-users
-                      a href="https://github.com/sai-lab/mouryou" target="_blank"
-                        | sai-lab/mouryou
-                      small.sensu-text &nbsp;(魍魎: Auto scaling tool by Golang for web servers on Cloud)
-                    li
-                      i.fa.fa-li.fa-users
-                      a href="https://github.com/sai-lab/shoko" target="_blank"
-                        | sai-lab/shoko
-                      small.sensu-text &nbsp;(書庫: Document (書) archive service for teams)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/ohgi" target="_blank"
-                        | hico-horiuchi/ohgi
-                      small.sensu-text &nbsp;(扇: Sensu command-line tool by Golang)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/streak_ranking" target="_blank"
-                        | hico-horiuchi/streak_ranking
-                      small.sensu-text &nbsp;(Ranking of streak of your GitHub followees)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/hubo_labo" target="_blank"
-                        | hico-horiuchi/hubo_labo
-                      small.sensu-text &nbsp;(Hubot community site)
-                    li
-                      i.fa.fa-li.fa-users
-                      a href="https://github.com/emacs-jp/reading-init.el" target="_blank"
-                        | emacs-jp/reading-init.el
-                      small.sensu-text &nbsp;(init.el読書会のページ)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/huboco" target="_blank"
-                        | hico-horiuchi/huboco
-                      small.sensu-text &nbsp;(あなたの研究生活をサポートするHubot)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/snmp_monitor" target="_blank"
-                        | hico-horiuchi/snmp_monitor
-                      small.sensu-text &nbsp;(SNMPをグラフ化するWebアプリケーション)
-                    li
-                      i.fa.fa-li.fa-user
-                      a href="https://github.com/hico-horiuchi/comic_release.rb" target="_blank"
-                        | hico-horiuchi/comic_release.rb
-                      small.sensu-text &nbsp;(コミック新刊の発売日を調べるRubyスクリプト)
-
-              hr
-
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-child
-                    | Club
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-gamepad
-                      a href="http://poulenc.eng.kagawa-u.ac.jp/Pub/Club/KBIT/" target="_blank"
-                        | Student Laboratory of Programming&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-camera
-                      a href="https://www.facebook.com/RisePhotoClub" target="_blank"
-                        | RISE Photo Club&nbsp;
-                        i.fa.fa-external-link
-
-              hr
-
-              .row
-                .col.s12.m10.offset-m1
-                  h4.bold
-                    i.fa.fa-fw.fa-paint-brush
-                    | Design
-                  ul.fa-ul
-                    li
-                      i.fa.fa-li.fa-picture-o
-                      a href="http://hico-horiuchi.github.io/assets/images/slp_logo_set.png" target="_blank"
-                        | SLP(学生プログラミング研究所) ロゴ&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-globe
-                      a href="http://hico-horiuchi.github.io/eng-fes-2015/" target="_blank"
-                        | 第12回 香川大学工学部祭 Webサイト&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-picture-o
-                      a href="http://hico-horiuchi.github.io/assets/images/janog_36_goods.png" target="_blank"
-                        | JANOG36 Meeting グッズロゴ&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-picture-o
-                      a href="http://hico-horiuchi.github.io/assets/images/janog_35_goods.png" target="_blank"
-                        | JANOG35 Meeting グッズロゴ&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-picture-o
-                      a href="http://hico-horiuchi.github.io/assets/images/kagawa_univ_eng_fes_2014.png" target="_blank"
-                        | 第11回 香川大学工学部祭 ポスター&nbsp;
-                        i.fa.fa-external-link
-                    li
-                      i.fa.fa-li.fa-picture-o
-                      a href="http://hico-horiuchi.github.io/assets/images/media_design_study_group.png" target="_blank"
-                        | 香川大学工学部 メディア・デザイン研究会 ポスター&nbsp;
-                        i.fa.fa-external-link
-
-            .card-content.sensu-darken.white-text
-              .row
-                .col.s12.m10.offset-m1.center-align
-                  span.bold &copy; 2015 Akihiko Horiuchi, All Rights Reserved.
+    script src="./assets/javascripts/bower_components.min.js" type="text/javascript"
+    script src="./assets/javascripts/application.min.js" type="text/javascript"

@@ -1,0 +1,51 @@
+$sensu-lighten: #d9dfc1;
+$sensu:         #84b357;
+$sensu-darken:  #3a6b48;
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    transition:         $transition;
+}
+
+@mixin text-color($color) {
+  color: $color;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin link-color($color, $hover) {
+  color: $color;
+  text-decoration: none;
+  @include transition(color .3s ease);
+
+  &:hover {
+    color: $hover;
+    text-decoration: none;
+  }
+}
+
+.text-white { @include text-color(#fff); }
+.text-sensu { @include text-color($sensu); }
+
+a.link-white { @include link-color(#fff, $sensu-lighten); }
+a.link-muted { @include link-color(#818a91, #818a91); }
+a.link-sensu { @include link-color($sensu, $sensu-darken); }
+
+.bg-white {
+  background: #fff;
+  @include transition(color .3s ease);
+  @include transition(background .3s ease);
+}
+
+a.bg-white:hover {
+  color: #fff;
+  background: $sensu-lighten;
+}
+
+.bg-sensu { background: $sensu; }
+
+.border-sensu { border: 1px solid $sensu; }

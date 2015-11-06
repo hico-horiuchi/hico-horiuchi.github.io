@@ -1,0 +1,20 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 62em) {
+  .container {
+    max-width: 45rem;
+  }
+}
+
+.navbar-brand {
+  float: none;
+}
+
+.card {
+  position: relative;
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: nowrap;
+}

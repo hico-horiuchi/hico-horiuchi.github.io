@@ -1,0 +1,25 @@
+[{
+  "title": "香川大学工学部 学生プログラミング研究所 ロゴ",
+  "content": "./assets/images/slp_logo_set.png",
+  "icon": "picture-o"
+}, {
+  "title": "第12回 香川大学工学部祭 Webサイト",
+  "content": "http://hico-horiuchi.github.io/eng-fes-2015/",
+  "icon": "globe"
+}, {
+  "title": "JANOG36 Meeting グッズロゴ",
+  "content": "./assets/images/janog_36_goods.png",
+  "icon": "picture-o"
+}, {
+  "title": "JANOG35 Meeting グッズロゴ",
+  "content": "./assets/images/janog_35_goods.png",
+  "icon": "picture-o"
+}, {
+  "title": "第11回 香川大学工学部祭 ポスター",
+  "content": "./assets/images/kagawa_univ_eng_fes_2014.png",
+  "icon": "picture-o"
+}, {
+  "title": "香川大学工学部 メディア・デザイン研究会 ポスター",
+  "content": "./assets/images/media_design_study_group.png",
+  "icon": "picture-o"
+}]

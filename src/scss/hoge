@@ -1,0 +1,33 @@
+$sensu-lighten: #d9dfc1;
+$sensu:         #84b357;
+$sensu-darken:  #3a6b48;
+
+@mixin text-color($color) {
+  color: $color;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin link-color($color, $hover) {
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover;
+    text-decoration: none;
+  }
+}
+
+.text-white { @include text-color(#fff);    }
+.text-sensu { @include text-color($sensu); }
+
+a.link-white { @include link-color(#fff); }
+a.link-muted { @include link-color(#818a91, #818a9); }
+a.link-sensu { @include link-color($sensu); }
+
+.bg-white { background: #fff;    }
+.bg-sensu { background: $sensu; }
+
+.border-sensu { border: 1px solid $sensu; }
