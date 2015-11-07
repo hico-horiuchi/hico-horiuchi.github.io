@@ -49,7 +49,7 @@
 }, {
   "repository": "emacs-jp/reading-init.el",
   "description": "init.el読書会のページ",
-  "organization": false
+  "organization": true
 }, {
   "repository": "hico-horiuchi/huboco",
   "description": "あなたの研究生活をサポートするHubot",
