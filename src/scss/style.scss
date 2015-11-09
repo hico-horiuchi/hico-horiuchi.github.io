@@ -49,3 +49,15 @@ a.bg-white:hover {
 .bg-sensu { background: $sensu; }
 
 .border-sensu { border: 1px solid $sensu; }
+
+.splat-container {
+  position: relative;
+  width: 450px;
+  height: 270px;
+
+  .splat-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

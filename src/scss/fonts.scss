@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url('../fonts/ubuntu-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'イカモドキ';
+  font-style: normal;
+  font-weight: 400;
+  src: local('イカモドキ'), local('イカモドキ'), url('../fonts/ikamodoki.ttf') format('truetype');
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+.ikamodoki {
+  font-family: イカモドキ, sans-serif;
+  font-size: 1.1em;
+  letter-spacing: .05em;
+  vertical-align: -.15em;
+}
