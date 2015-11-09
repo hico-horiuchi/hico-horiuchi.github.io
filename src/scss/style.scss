@@ -53,13 +53,23 @@ a.bg-white:hover {
 .splat-container {
   position: relative;
   width: 450px;
-  max-width: auto;
   height: 270px;
-  max-height: auto;
 
   .splat-img {
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+@media (max-width: 641px) {
+  .splat-container {
+    width: 225px;
+    height: 135px;
+
+    .splat-img {
+      width: 225px;
+      height: 135px;
+    }
   }
 }
