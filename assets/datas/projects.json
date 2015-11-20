@@ -1,4 +1,8 @@
 [{
+  "repository": "hico-horiuchi/yosage-web",
+  "description": "Web application of yosage by Golang & Mithril.js",
+  "organization": false
+}, {
   "repository": "sai-lab/mouryou-web",
   "description": "Web dashboard for mouryu by Golang & Mithril.js",
   "organization": true
