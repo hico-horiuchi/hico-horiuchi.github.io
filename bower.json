@@ -7,9 +7,9 @@
     "bower_components"
   ],
   "dependencies": {
-    "animate.css": ">= 3.4.x",
+    "animate.css": ">= 3.5.x",
     "bootstrap": ">= 4.0.x",
-    "fontawesome": ">= 4.4.x",
+    "fontawesome": ">= 4.5.x",
     "mithril": ">= 0.2.x"
   },
   "devDependencies": {}
