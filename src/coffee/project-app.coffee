@@ -19,7 +19,7 @@
           m('i.fa.fa-li', {
             class: if item.organization then 'fa-users' else 'fa-user'
           }),
-          m('a.link-white.m-r-sm[target=_blank]', {
+          m('a.link-white.m-r-05[target=_blank]', {
             href: 'https://github.com/' + item.repository
           }, item.repository),
           m('small', "(#{item.description})")

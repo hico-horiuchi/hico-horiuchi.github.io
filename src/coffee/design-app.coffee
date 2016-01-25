@@ -23,7 +23,7 @@
             href: item.content
           }, [
             item.title,
-            m('i.fa.fa-external-link.m-l-sm')
+            m('i.fa.fa-external-link.m-l-05')
           ])
         ])
       )
