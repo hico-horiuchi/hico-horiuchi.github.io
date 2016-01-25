@@ -1,4 +1,8 @@
 [{
+  "repository": "hico-horiuchi/botkit-omikuji-command",
+  "description": "Randomly selection from choices by Botkit",
+  "organization": false
+}, {
   "repository": "hico-horiuchi/yosage-web",
   "description": "Web application of yosage by Golang & Mithril.js",
   "organization": false
