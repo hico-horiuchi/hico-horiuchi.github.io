@@ -1,4 +1,8 @@
 [{
+  "repository": "hico-horiuchi/ohgibone",
+  "description": "扇骨: Golang package to access Sensu API for ohgi",
+  "organization": false
+}, {
   "repository": "hico-horiuchi/botkit-omikuji-command",
   "description": "Randomly selection from choices by Botkit",
   "organization": false

@@ -19,7 +19,7 @@
     "gulp-concat": ">= 2.6.x",
     "gulp-load-plugins": ">= 1.2.x",
     "gulp-minify-css": ">= 1.2.x",
-    "gulp-sass": ">= 2.1.x",
+    "gulp-sass": ">= 2.2.x",
     "gulp-slim": ">= 0.3.x",
     "gulp-uglify": ">= 1.5.x",
     "gulp-webserver": ">= 0.9.x",
